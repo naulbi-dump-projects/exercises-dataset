@@ -33,15 +33,25 @@
 
 ## 📦 Data Source & Attribution
 
-The exercise data, thumbnail images, and animation GIFs in this repository originate from the
-**[Fitness Exercises Dataset by *omarxadel* on Kaggle](https://www.kaggle.com/datasets/omarxadel/fitness-exercises-dataset)**.
+The exercise **media (images & animation GIFs)** and the **base exercise data** in this repository
+originate from **[ExerciseDB v1 by AscendAPI](https://oss.exercisedb.dev)** ([API docs](https://oss.exercisedb.dev/docs)).
 
-- The English instructions and **all media** (images & GIFs) come from that dataset.
-- The **Spanish 🇪🇸, Italian 🇮🇹, and Turkish 🇹🇷 translations** were added in this repository on top of the original English data.
+Each media file is named `{index}-{exerciseId}.{ext}`, where `exerciseId` is the original ExerciseDB v1 id.
+The same asset is served from AscendAPI's CDN — e.g. [`static.exercisedb.dev/media/EIeI8Vf.gif`](https://static.exercisedb.dev/media/EIeI8Vf.gif)
+is byte-for-byte identical to this repo's `videos/0025-EIeI8Vf.gif`. The assets were obtained via a
+[Kaggle re-host by *omarxadel*](https://www.kaggle.com/datasets/omarxadel/fitness-exercises-dataset).
 
-> **License:** Please refer to the **[license stated on the original Kaggle dataset page](https://www.kaggle.com/datasets/omarxadel/fitness-exercises-dataset)** before reusing the media.
-> The images and GIFs remain the property of their original creators and are included here **for educational, non-commercial use only**.
-> If you are a rights holder and want your content removed, please [open an issue](../../issues).
+**Added in this repository** on top of the original ExerciseDB data:
+
+- 🇪🇸 Spanish, 🇮🇹 Italian, and 🇹🇷 Turkish translations of the instructions
+- the interactive browser (`index.html`) and developer setup guide (`setup.html`)
+- formatting, cleanup, and 1:1 media alignment
+
+> **License & credit:** The exercise media and base data belong to **AscendAPI / ExerciseDB** — please review
+> [ExerciseDB's terms](https://oss.exercisedb.dev/docs) before any reuse. Everything here is provided for
+> **educational, non-commercial use only**. Original-source attribution was added following issue [#5](../../issues/5)
+> (thanks to [@shinkaidev](https://github.com/shinkaidev) for the report). If you are a rights holder and want your
+> content removed, please [open an issue](../../issues).
 
 ---
 
@@ -426,6 +436,6 @@ This project is for **educational and non-commercial purposes only**.
 - All images and videos are property of their respective copyright holders.
 - For commercial use, please contact the original content owners directly.
 
-> **Data source:** Original data and media from the [Fitness Exercises Dataset by *omarxadel* on Kaggle](https://www.kaggle.com/datasets/omarxadel/fitness-exercises-dataset) — see the [Data Source & Attribution](#-data-source--attribution) section above and the original dataset's license for reuse terms.
+> **Data source:** Media and base exercise data originate from [ExerciseDB v1 by AscendAPI](https://oss.exercisedb.dev) (obtained via a [Kaggle re-host](https://www.kaggle.com/datasets/omarxadel/fitness-exercises-dataset)) — see the [Data Source & Attribution](#-data-source--attribution) section above and [ExerciseDB's terms](https://oss.exercisedb.dev/docs) for reuse.
 
 If you are a copyright holder and wish to have your content removed, please [open an issue](../../issues).
